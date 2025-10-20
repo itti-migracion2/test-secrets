@@ -147,7 +147,7 @@ jobs:
         \"_\" + payload[\"environment\"].gsub(/[_\\/-]+/, '_').downcase\nend\nFileUtils.mv(\"archive/export.json\",
         \"archive/#{filename}.json\")"
     - name: Upload Archive
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: gosm-secrets-export-automated_staging
         path: archive/
